@@ -2,69 +2,14 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-copilot/create-fullstack-portal
-    "contact": "Contact"
-  },
-  "home": {
-    "hero_title": "Welcome to LucianoAI Systems",
-    "hero_subtitle": "Build. Automate. Scale.",
-    "hero_description": "We help businesses grow with cutting-edge web development, automation, and AI solutions.",
-    "services_title": "Our Services",
-    "services_subtitle": "Choose a service to get started"
-  },
-  "services": {
-    "web_dev": {
-      "name": "Web Development",
-      "description": "Professional websites that convert visitors into customers",
-      "icon": "💻"
-    },
-    "automation": {
-      "name": "Automation (n8n / AI)",
-      "description": "Automate your workflows and save hours every week",
-      "icon": "⚡"
-    },
-    "bots": {
-      "name": "Bots & AI Agents",
-      "description": "Intelligent bots and agents that work 24/7 for your business",
-      "icon": "🤖"
-    },
-    "low_voltage": {
-      "name": "Low Voltage Systems",
-      "description": "Professional low voltage installations and smart systems",
-      "icon": "🔌"
-    },
-    "real_estate": {
-      "name": "Real Estate Solutions",
-      "description": "Digital tools and automation for real estate professionals",
-      "icon": "🏠"
-    },
-    "youtube": {
-      "name": "YouTube / FocusModeLab",
-      "description": "Content creation and YouTube channel growth strategies",
-      "icon": "🎥"
-    }
-  },
-  "service_page": {
-    "outcomes_title": "What You Get",
-    "options_title": "Service Options",
-    "pricing_title": "Pricing",
-    "pricing_private": "Private pricing available",
-    "cta_button": "Start Project",
-    "cta_subtitle": "Get started today with a free consultation",
-    "contact_cta": "Contact Us First"
-  },
-  "footer": {
-    "tagline": "Build. Automate. Scale.",
-    "rights": "All rights reserved.",
-    "privacy": "Private pricing available for enterprise clients."
-=======
     "web": "Web Development",
     "automation": "Automation",
     "bots": "Bots & AI Agents",
     "lowVoltage": "Low Voltage",
     "realEstate": "Real Estate",
     "youtube": "YouTube/FocusModeLab",
-    "nexa": "NEXA Systems"
+    "nexa": "NEXA Systems",
+    "contact": "Contact"
   },
   "home": {
     "heroTitle": "Welcome to FocusMode",
@@ -193,10 +138,23 @@ copilot/create-fullstack-portal
       "pricing": "Custom quotes based on scope."
     }
   },
+  "service_page": {
+    "outcomes_title": "What You Get",
+    "options_title": "Service Options",
+    "pricing_title": "Pricing",
+    "pricing_private": "Private pricing available",
+    "cta_button": "Start Project",
+    "cta_subtitle": "Get started today with a free consultation",
+    "contact_cta": "Contact Us First"
+  },
   "cta": {
     "buy": "Buy",
     "visit": "Visit Site",
     "contact": "Contact"
-main
+  },
+  "footer": {
+    "tagline": "Build. Automate. Scale.",
+    "rights": "All rights reserved.",
+    "privacy": "Private pricing available for enterprise clients."
   }
 }
