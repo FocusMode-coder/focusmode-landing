@@ -150,7 +150,9 @@
   "cta": {
     "buy": "Buy",
     "visit": "Visit Site",
-    "contact": "Contact"
+    "contact": "Contact",
+    "startProject": "Start Project",
+    "learnMore": "Learn More"
   },
   "footer": {
     "tagline": "Build. Automate. Scale.",
