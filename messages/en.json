@@ -7,11 +7,12 @@
     "bots": "Bots & AI Agents",
     "lowVoltage": "Low Voltage",
     "realEstate": "Real Estate",
-    "youtube": "YouTube/FocusModeLab"
+    "youtube": "YouTube/FocusModeLab",
+    "nexa": "NEXA Systems"
   },
   "home": {
-    "heroTitle": "Welcome to LucianoAI Systems",
-    "heroSubtitle": "Premium digital solutions for modern businesses. From web development to AI automation — we build what moves you forward.",
+    "heroTitle": "Welcome to FocusMode",
+    "heroSubtitle": "Premium digital systems built for execution. From web platforms to AI automation — we create assets that generate results.",
     "heroCta": "Explore Services",
     "servicesTitle": "Our Services"
   },
@@ -20,7 +21,7 @@
       "name": "Web Development",
       "description": "Modern, high-performance websites and web applications.",
       "heroTitle": "Web Development",
-      "heroSubtitle": "We build fast, scalable, and beautiful websites tailored to your business goals.",
+      "heroSubtitle": "We build fast, scalable, and conversion-focused websites tailored to your business.",
       "outcomes": [
         "Launch a high-converting landing page in days",
         "Get a custom web app built with modern tech",
@@ -31,96 +32,114 @@
         { "title": "Business Website", "desc": "Multi-page site with CMS and blog." },
         { "title": "Web Application", "desc": "Full-stack app with auth, DB, and API." }
       ],
-      "pricing": "Custom quotes based on scope. Private pricing available — use your code at checkout."
+      "pricing": "Custom quotes based on scope."
     },
     "automation": {
       "name": "Automation (n8n/AI)",
-      "description": "Automate workflows with n8n and AI-powered pipelines.",
+      "description": "Automate workflows with AI-powered pipelines.",
       "heroTitle": "Automation (n8n/AI)",
-      "heroSubtitle": "Eliminate repetitive work and unlock AI-driven efficiency across your operations.",
+      "heroSubtitle": "Eliminate repetitive work and unlock AI-driven efficiency.",
       "outcomes": [
-        "Automate your sales, support, or ops workflows",
-        "Connect your tools with no-code AI pipelines",
-        "Save 10+ hours per week with smart automation"
+        "Automate your sales, support, or operations",
+        "Connect your tools with AI pipelines",
+        "Save hours weekly with smart automation"
       ],
       "options": [
-        { "title": "Starter Automation", "desc": "1-3 automated workflows with n8n." },
-        { "title": "AI Pipeline", "desc": "LLM-powered pipeline for data or content." },
-        { "title": "Full Ops Automation", "desc": "End-to-end automation for your business." }
+        { "title": "Starter Automation", "desc": "1-3 automated workflows." },
+        { "title": "AI Pipeline", "desc": "LLM-powered workflows." },
+        { "title": "Full Automation", "desc": "End-to-end business automation." }
       ],
-      "pricing": "Custom quotes based on scope. Private pricing available — use your code at checkout."
+      "pricing": "Custom quotes based on scope."
     },
     "bots": {
       "name": "Bots & AI Agents",
-      "description": "Custom chatbots and autonomous AI agents for your business.",
+      "description": "Custom AI agents for automation and growth.",
       "heroTitle": "Bots & AI Agents",
-      "heroSubtitle": "Deploy intelligent agents that work 24/7 to serve your customers and automate decisions.",
+      "heroSubtitle": "Deploy intelligent agents that work 24/7.",
       "outcomes": [
-        "Launch a branded AI chatbot on your site or app",
-        "Build a custom AI agent for lead gen or support",
-        "Integrate with WhatsApp, Telegram, or Slack"
+        "Launch AI chatbots on your platform",
+        "Automate lead generation",
+        "Integrate with WhatsApp, Telegram, Slack"
       ],
       "options": [
-        { "title": "Support Bot", "desc": "FAQ and customer support chatbot." },
-        { "title": "Lead Gen Agent", "desc": "AI agent that qualifies and captures leads." },
-        { "title": "Custom AI Agent", "desc": "Fully tailored agent with custom logic." }
+        { "title": "Support Bot", "desc": "Customer support chatbot." },
+        { "title": "Lead Agent", "desc": "Lead capture AI agent." },
+        { "title": "Custom AI", "desc": "Fully tailored agent." }
       ],
-      "pricing": "Custom quotes based on scope. Private pricing available — use your code at checkout."
+      "pricing": "Custom quotes based on scope."
     },
     "lowVoltage": {
       "name": "Low Voltage Systems",
-      "description": "Smart home, security, and low voltage infrastructure solutions.",
+      "description": "Smart home and security installations.",
       "heroTitle": "Low Voltage Systems",
-      "heroSubtitle": "Professional design and installation of smart, secure, and connected environments.",
+      "heroSubtitle": "Professional smart systems and infrastructure.",
       "outcomes": [
-        "Get a fully wired smart home or office",
-        "Install professional-grade security systems",
-        "Centralize control with modern AV and networking"
+        "Smart homes and offices",
+        "Security systems installed",
+        "Advanced networking setups"
       ],
       "options": [
-        { "title": "Security System", "desc": "Cameras, alarms, and access control." },
-        { "title": "Smart Home", "desc": "Full home automation and networking." },
-        { "title": "AV & Network", "desc": "Audio-visual and structured cabling." }
+        { "title": "Security", "desc": "Cameras and alarms." },
+        { "title": "Smart Home", "desc": "Automation systems." },
+        { "title": "Networking", "desc": "Structured cabling." }
       ],
-      "pricing": "Custom quotes based on scope. Private pricing available — use your code at checkout."
+      "pricing": "Custom quotes based on scope."
     },
     "realEstate": {
       "name": "Real Estate Solutions",
-      "description": "Tech-powered tools and marketing for real estate professionals.",
+      "description": "Lead generation and systems for real estate.",
       "heroTitle": "Real Estate Solutions",
-      "heroSubtitle": "Elevate your real estate brand with custom websites, CRM automation, and AI-driven lead generation.",
+      "heroSubtitle": "AI-powered systems for real estate growth.",
       "outcomes": [
-        "Launch a property listing site with IDX/MLS",
-        "Automate lead follow-up and CRM workflows",
-        "Generate more qualified buyer and seller leads"
+        "Property websites with listings",
+        "Automated lead follow-up",
+        "More qualified clients"
       ],
       "options": [
-        { "title": "Agent Website", "desc": "Custom real estate site with listings." },
-        { "title": "Lead Gen System", "desc": "AI-powered lead capture and nurture." },
-        { "title": "Full RE Tech Stack", "desc": "CRM, site, automation bundled." }
+        { "title": "Agent Site", "desc": "Custom listing website." },
+        { "title": "Lead System", "desc": "AI lead generation." },
+        { "title": "Full Stack", "desc": "Complete system." }
       ],
-      "pricing": "Custom quotes based on scope. Private pricing available — use your code at checkout."
+      "pricing": "Custom quotes based on scope."
     },
     "youtube": {
-      "name": "YouTube/FocusModeLab",
-      "description": "Content strategy, channel growth, and FocusModeLab resources.",
+      "name": "YouTube / FocusModeLab",
+      "description": "Content strategy and channel growth.",
       "heroTitle": "YouTube / FocusModeLab",
-      "heroSubtitle": "Grow your YouTube channel with expert strategy, production support, and the FocusModeLab community.",
+      "heroSubtitle": "Grow and monetize your YouTube channel.",
       "outcomes": [
-        "Get a proven YouTube content and growth strategy",
-        "Access FocusModeLab courses and community",
-        "Monetize your channel faster with expert guidance"
+        "Content strategy",
+        "Channel optimization",
+        "Monetization systems"
       ],
       "options": [
-        { "title": "Channel Audit", "desc": "Full review with actionable improvements." },
-        { "title": "Content Strategy", "desc": "90-day plan tailored to your niche." },
-        { "title": "FocusModeLab Access", "desc": "Full community and course access." }
+        { "title": "Audit", "desc": "Channel review." },
+        { "title": "Strategy", "desc": "Growth plan." },
+        { "title": "Access", "desc": "FocusModeLab resources." }
       ],
-      "pricing": "Custom quotes based on scope. Private pricing available — use your code at checkout."
+      "pricing": "Custom quotes based on scope."
+    },
+    "nexa": {
+      "name": "NEXA Systems",
+      "description": "AI-powered client acquisition systems.",
+      "heroTitle": "NEXA Systems",
+      "heroSubtitle": "We build automated client acquisition systems that generate leads and book calls for you.",
+      "outcomes": [
+        "Consistent inbound leads",
+        "Automated qualification system",
+        "Booked calls directly on your calendar"
+      ],
+      "options": [
+        { "title": "Lead Engine", "desc": "Automated outreach system." },
+        { "title": "AI Intake", "desc": "Lead qualification + routing." },
+        { "title": "Full NEXA", "desc": "End-to-end client acquisition system." }
+      ],
+      "pricing": "Custom quotes based on scope."
     }
   },
   "cta": {
-    "startProject": "Start Project",
-    "learnMore": "Learn More"
+    "buy": "Buy",
+    "visit": "Visit Site",
+    "contact": "Contact"
   }
 }
