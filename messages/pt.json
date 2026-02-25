@@ -2,6 +2,7 @@
   "nav": {
     "home": "Início",
     "services": "Serviços",
+copilot/create-fullstack-portal
     "contact": "Contato"
   },
   "home": {
@@ -56,5 +57,148 @@
     "tagline": "Construa. Automatize. Escale.",
     "rights": "Todos os direitos reservados.",
     "privacy": "Preços privados disponíveis para clientes corporativos."
+=======
+    "web": "Desenvolvimento Web",
+    "automation": "Automação",
+    "bots": "Bots e Agentes IA",
+    "lowVoltage": "Baixa Tensão",
+    "realEstate": "Imóveis",
+    "youtube": "YouTube/FocusModeLab",
+    "nexa": "NEXA Systems"
+  },
+  "home": {
+    "heroTitle": "Bem-vindo ao FocusMode",
+    "heroSubtitle": "Sistemas premium projetados para execução. De plataformas web a automação com IA — criamos ativos que geram resultados.",
+    "heroCta": "Explorar Serviços",
+    "servicesTitle": "Nossos Serviços"
+  },
+  "services": {
+    "web": {
+      "name": "Desenvolvimento Web",
+      "description": "Sites modernos e de alta performance para o seu negócio.",
+      "heroTitle": "Desenvolvimento Web",
+      "heroSubtitle": "Construímos sites rápidos, escaláveis e orientados à conversão.",
+      "outcomes": [
+        "Lance uma landing page de alta conversão em dias",
+        "Tenha um aplicativo web personalizado com tecnologia moderna",
+        "Alcance alto desempenho e SEO de nível profissional"
+      ],
+      "options": [
+        { "title": "Landing Page", "desc": "Site de página única otimizado para conversões." },
+        { "title": "Site Empresarial", "desc": "Site multi-página com CMS e blog." },
+        { "title": "Aplicação Web", "desc": "App full-stack com autenticação, BD e API." }
+      ],
+      "pricing": "Orçamentos personalizados por escopo."
+    },
+    "automation": {
+      "name": "Automação (n8n/IA)",
+      "description": "Automatize processos com pipelines inteligentes.",
+      "heroTitle": "Automação (n8n/IA)",
+      "heroSubtitle": "Elimine tarefas repetitivas e escale sua operação com IA.",
+      "outcomes": [
+        "Automatize vendas, suporte e operações",
+        "Conecte ferramentas com pipelines de IA",
+        "Economize tempo com automação inteligente"
+      ],
+      "options": [
+        { "title": "Automação Inicial", "desc": "1-3 fluxos automatizados." },
+        { "title": "Pipeline de IA", "desc": "Pipelines com LLM para dados ou conteúdo." },
+        { "title": "Automação Total", "desc": "Automação completa do negócio." }
+      ],
+      "pricing": "Orçamentos personalizados por escopo."
+    },
+    "bots": {
+      "name": "Bots e Agentes IA",
+      "description": "Agentes inteligentes para automação e crescimento.",
+      "heroTitle": "Bots e Agentes IA",
+      "heroSubtitle": "Implante agentes que trabalham 24/7 para o seu negócio.",
+      "outcomes": [
+        "Chatbots com sua marca",
+        "Automação de geração de leads",
+        "Integração com WhatsApp, Telegram e Slack"
+      ],
+      "options": [
+        { "title": "Bot de Suporte", "desc": "Atendimento automatizado ao cliente." },
+        { "title": "Agente de Leads", "desc": "Qualificação e captura de leads." },
+        { "title": "Agente IA Personalizado", "desc": "Agente com lógica customizada." }
+      ],
+      "pricing": "Orçamentos personalizados por escopo."
+    },
+    "lowVoltage": {
+      "name": "Sistemas de Baixa Tensão",
+      "description": "Infraestrutura inteligente, segurança e conectividade.",
+      "heroTitle": "Sistemas de Baixa Tensão",
+      "heroSubtitle": "Ambientes modernos, seguros e totalmente conectados.",
+      "outcomes": [
+        "Casa ou escritório conectados",
+        "Sistemas de segurança profissional",
+        "Controle centralizado AV e rede"
+      ],
+      "options": [
+        { "title": "Sistema de Segurança", "desc": "Câmeras e controle de acesso." },
+        { "title": "Casa Inteligente", "desc": "Automação residencial completa." },
+        { "title": "AV e Redes", "desc": "Infraestrutura audiovisual e rede." }
+      ],
+      "pricing": "Orçamentos personalizados por escopo."
+    },
+    "realEstate": {
+      "name": "Soluções Imobiliárias",
+      "description": "Tecnologia para crescimento no mercado imobiliário.",
+      "heroTitle": "Soluções Imobiliárias",
+      "heroSubtitle": "Sistemas para captar, nutrir e converter leads.",
+      "outcomes": [
+        "Sites imobiliários profissionais",
+        "Automação de leads",
+        "Mais clientes qualificados"
+      ],
+      "options": [
+        { "title": "Site de Corretor", "desc": "Site com listagens personalizadas." },
+        { "title": "Sistema de Leads", "desc": "Captura e nutrição com IA." },
+        { "title": "Stack RE", "desc": "Sistema completo integrado." }
+      ],
+      "pricing": "Orçamentos personalizados por escopo."
+    },
+    "youtube": {
+      "name": "YouTube / FocusModeLab",
+      "description": "Estratégia e crescimento de conteúdo.",
+      "heroTitle": "YouTube / FocusModeLab",
+      "heroSubtitle": "Cresça e monetize com estratégia e sistema.",
+      "outcomes": [
+        "Estratégia de conteúdo",
+        "Crescimento do canal",
+        "Monetização"
+      ],
+      "options": [
+        { "title": "Auditoria", "desc": "Análise completa do canal." },
+        { "title": "Estratégia", "desc": "Plano de crescimento." },
+        { "title": "FocusModeLab", "desc": "Acesso à comunidade." }
+      ],
+      "pricing": "Orçamentos personalizados por escopo."
+    },
+    "nexa": {
+      "name": "NEXA Systems",
+      "description": "Sistema de aquisição de clientes com IA.",
+      "heroTitle": "NEXA Systems",
+      "heroSubtitle": "Geração automática de leads e agendamentos.",
+      "outcomes": [
+        "Leads constantes",
+        "Qualificação automática",
+        "Agendamento direto no calendário"
+      ],
+      "options": [
+        { "title": "Lead Engine", "desc": "Sistema de geração de leads." },
+        { "title": "AI Intake", "desc": "Qualificação inteligente." },
+        { "title": "Full NEXA", "desc": "Sistema completo." }
+      ],
+      "pricing": "Orçamentos personalizados por escopo."
+    }
+  },
+  "cta": {
+    "buy": "Comprar",
+    "visit": "Visitar Site",
+    "contact": "Contato",
+    "startProject": "Iniciar Projeto",
+    "learnMore": "Saiba Mais"
+main
   }
 }
