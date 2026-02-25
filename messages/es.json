@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "web": "Desarrollo Web",
+    "automation": "Automatización",
+    "bots": "Bots e Agentes IA",
+    "lowVoltage": "Baja Tensión",
+    "realEstate": "Bienes Raíces",
+    "youtube": "YouTube/FocusModeLab"
+  },
+  "home": {
+    "heroTitle": "Bienvenido a LucianoAI Systems",
+    "heroSubtitle": "Soluciones digitales premium para negocios modernos. Desde desarrollo web hasta automatización con IA — construimos lo que te impulsa.",
+    "heroCta": "Explorar Servicios",
+    "servicesTitle": "Nuestros Servicios"
+  },
+  "services": {
+    "web": {
+      "name": "Desarrollo Web",
+      "description": "Sitios web modernos y de alto rendimiento para tu negocio.",
+      "heroTitle": "Desarrollo Web",
+      "heroSubtitle": "Construimos sitios web rápidos, escalables y hermosos adaptados a tus objetivos de negocio.",
+      "outcomes": [
+        "Lanza una landing page de alta conversión en días",
+        "Obtén una aplicación web personalizada con tecnología moderna",
+        "Alcanza rendimiento y puntajes SEO de primer nivel"
+      ],
+      "options": [
+        { "title": "Landing Page", "desc": "Sitio de una página optimizado para conversiones." },
+        { "title": "Sitio Empresarial", "desc": "Sitio multipágina con CMS y blog." },
+        { "title": "Aplicación Web", "desc": "App full-stack con autenticación, BD y API." }
+      ],
+      "pricing": "Cotizaciones personalizadas según el alcance. Precios privados disponibles — usa tu código al pagar."
+    },
+    "automation": {
+      "name": "Automatización (n8n/IA)",
+      "description": "Automatiza flujos de trabajo con n8n y pipelines potenciados por IA.",
+      "heroTitle": "Automatización (n8n/IA)",
+      "heroSubtitle": "Elimina el trabajo repetitivo y desbloquea la eficiencia impulsada por IA en tus operaciones.",
+      "outcomes": [
+        "Automatiza tus flujos de ventas, soporte u operaciones",
+        "Conecta tus herramientas con pipelines de IA sin código",
+        "Ahorra más de 10 horas por semana con automatización inteligente"
+      ],
+      "options": [
+        { "title": "Automatización Inicial", "desc": "1-3 flujos automatizados con n8n." },
+        { "title": "Pipeline de IA", "desc": "Pipeline impulsado por LLM para datos o contenido." },
+        { "title": "Automatización Total", "desc": "Automatización integral para tu negocio." }
+      ],
+      "pricing": "Cotizaciones personalizadas según el alcance. Precios privados disponibles — usa tu código al pagar."
+    },
+    "bots": {
+      "name": "Bots e Agentes IA",
+      "description": "Chatbots personalizados y agentes de IA autónomos para tu negocio.",
+      "heroTitle": "Bots e Agentes IA",
+      "heroSubtitle": "Despliega agentes inteligentes que trabajan 24/7 para atender a tus clientes y automatizar decisiones.",
+      "outcomes": [
+        "Lanza un chatbot de IA con tu marca en tu sitio o app",
+        "Construye un agente de IA personalizado para generación de leads o soporte",
+        "Integra con WhatsApp, Telegram o Slack"
+      ],
+      "options": [
+        { "title": "Bot de Soporte", "desc": "Chatbot de preguntas frecuentes y atención al cliente." },
+        { "title": "Agente de Leads", "desc": "Agente de IA que califica y captura leads." },
+        { "title": "Agente IA Personalizado", "desc": "Agente totalmente adaptado con lógica personalizada." }
+      ],
+      "pricing": "Cotizaciones personalizadas según el alcance. Precios privados disponibles — usa tu código al pagar."
+    },
+    "lowVoltage": {
+      "name": "Sistemas de Baja Tensión",
+      "description": "Soluciones de hogar inteligente, seguridad e infraestructura de baja tensión.",
+      "heroTitle": "Sistemas de Baja Tensión",
+      "heroSubtitle": "Diseño e instalación profesional de entornos inteligentes, seguros y conectados.",
+      "outcomes": [
+        "Obtén un hogar u oficina completamente conectado",
+        "Instala sistemas de seguridad de nivel profesional",
+        "Centraliza el control con AV y redes modernas"
+      ],
+      "options": [
+        { "title": "Sistema de Seguridad", "desc": "Cámaras, alarmas y control de acceso." },
+        { "title": "Hogar Inteligente", "desc": "Automatización del hogar y redes completas." },
+        { "title": "AV y Redes", "desc": "Audiovisual y cableado estructurado." }
+      ],
+      "pricing": "Cotizaciones personalizadas según el alcance. Precios privados disponibles — usa tu código al pagar."
+    },
+    "realEstate": {
+      "name": "Soluciones Inmobiliarias",
+      "description": "Herramientas tecnológicas y marketing para profesionales inmobiliarios.",
+      "heroTitle": "Soluciones Inmobiliarias",
+      "heroSubtitle": "Eleva tu marca inmobiliaria con sitios web personalizados, automatización de CRM y generación de leads con IA.",
+      "outcomes": [
+        "Lanza un sitio de listados de propiedades con IDX/MLS",
+        "Automatiza el seguimiento de leads y flujos de CRM",
+        "Genera más leads calificados de compradores y vendedores"
+      ],
+      "options": [
+        { "title": "Sitio de Agente", "desc": "Sitio inmobiliario personalizado con listados." },
+        { "title": "Sistema de Leads", "desc": "Captura y nutrición de leads con IA." },
+        { "title": "Stack Tecnológico RE", "desc": "CRM, sitio y automatización en paquete." }
+      ],
+      "pricing": "Cotizaciones personalizadas según el alcance. Precios privados disponibles — usa tu código al pagar."
+    },
+    "youtube": {
+      "name": "YouTube/FocusModeLab",
+      "description": "Estrategia de contenido, crecimiento de canal y recursos de FocusModeLab.",
+      "heroTitle": "YouTube / FocusModeLab",
+      "heroSubtitle": "Haz crecer tu canal de YouTube con estrategia experta, apoyo en producción y la comunidad FocusModeLab.",
+      "outcomes": [
+        "Obtén una estrategia probada de contenido y crecimiento en YouTube",
+        "Accede a cursos y comunidad de FocusModeLab",
+        "Monetiza tu canal más rápido con orientación experta"
+      ],
+      "options": [
+        { "title": "Auditoría de Canal", "desc": "Revisión completa con mejoras accionables." },
+        { "title": "Estrategia de Contenido", "desc": "Plan de 90 días adaptado a tu nicho." },
+        { "title": "Acceso FocusModeLab", "desc": "Acceso completo a comunidad y cursos." }
+      ],
+      "pricing": "Cotizaciones personalizadas según el alcance. Precios privados disponibles — usa tu código al pagar."
+    }
+  },
+  "cta": {
+    "startProject": "Iniciar Proyecto",
+    "learnMore": "Más Información"
+  }
+}
