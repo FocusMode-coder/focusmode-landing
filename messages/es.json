@@ -2,6 +2,62 @@
   "nav": {
     "home": "Inicio",
     "services": "Servicios",
+ copilot/create-fullstack-portal
+    "contact": "Contacto"
+  },
+  "home": {
+    "hero_title": "Bienvenido a LucianoAI Systems",
+    "hero_subtitle": "Construye. Automatiza. Escala.",
+    "hero_description": "Ayudamos a las empresas a crecer con desarrollo web, automatización y soluciones de IA de vanguardia.",
+    "services_title": "Nuestros Servicios",
+    "services_subtitle": "Elige un servicio para comenzar"
+  },
+  "services": {
+    "web_dev": {
+      "name": "Desarrollo Web",
+      "description": "Sitios web profesionales que convierten visitantes en clientes",
+      "icon": "💻"
+    },
+    "automation": {
+      "name": "Automatización (n8n / IA)",
+      "description": "Automatiza tus flujos de trabajo y ahorra horas cada semana",
+      "icon": "⚡"
+    },
+    "bots": {
+      "name": "Bots y Agentes IA",
+      "description": "Bots inteligentes y agentes que trabajan 24/7 para tu negocio",
+      "icon": "🤖"
+    },
+    "low_voltage": {
+      "name": "Sistemas de Baja Tensión",
+      "description": "Instalaciones profesionales de baja tensión y sistemas inteligentes",
+      "icon": "🔌"
+    },
+    "real_estate": {
+      "name": "Soluciones Inmobiliarias",
+      "description": "Herramientas digitales y automatización para profesionales inmobiliarios",
+      "icon": "🏠"
+    },
+    "youtube": {
+      "name": "YouTube / FocusModeLab",
+      "description": "Creación de contenido y estrategias de crecimiento para YouTube",
+      "icon": "🎥"
+    }
+  },
+  "service_page": {
+    "outcomes_title": "Lo Que Obtienes",
+    "options_title": "Opciones de Servicio",
+    "pricing_title": "Precios",
+    "pricing_private": "Precios privados disponibles",
+    "cta_button": "Iniciar Proyecto",
+    "cta_subtitle": "Comienza hoy con una consulta gratuita",
+    "contact_cta": "Contáctanos Primero"
+  },
+  "footer": {
+    "tagline": "Construye. Automatiza. Escala.",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Precios privados disponibles para clientes empresariales."
+=======
     "web": "Desarrollo Web",
     "automation": "Automatización",
     "bots": "Bots e Agentes IA",
@@ -143,5 +199,6 @@
     "contact": "Contacto",
     "startProject": "Iniciar Proyecto",
     "learnMore": "Más Información"
+>>>>main
   }
 }
