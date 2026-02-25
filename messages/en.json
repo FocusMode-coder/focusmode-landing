@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "web": "Web Development",
+    "automation": "Automation",
+    "bots": "Bots & AI Agents",
+    "lowVoltage": "Low Voltage",
+    "realEstate": "Real Estate",
+    "youtube": "YouTube/FocusModeLab"
+  },
+  "home": {
+    "heroTitle": "Welcome to LucianoAI Systems",
+    "heroSubtitle": "Premium digital solutions for modern businesses. From web development to AI automation — we build what moves you forward.",
+    "heroCta": "Explore Services",
+    "servicesTitle": "Our Services"
+  },
+  "services": {
+    "web": {
+      "name": "Web Development",
+      "description": "Modern, high-performance websites and web applications.",
+      "heroTitle": "Web Development",
+      "heroSubtitle": "We build fast, scalable, and beautiful websites tailored to your business goals.",
+      "outcomes": [
+        "Launch a high-converting landing page in days",
+        "Get a custom web app built with modern tech",
+        "Achieve top-tier performance and SEO scores"
+      ],
+      "options": [
+        { "title": "Landing Page", "desc": "Single-page site optimized for conversions." },
+        { "title": "Business Website", "desc": "Multi-page site with CMS and blog." },
+        { "title": "Web Application", "desc": "Full-stack app with auth, DB, and API." }
+      ],
+      "pricing": "Custom quotes based on scope. Private pricing available — use your code at checkout."
+    },
+    "automation": {
+      "name": "Automation (n8n/AI)",
+      "description": "Automate workflows with n8n and AI-powered pipelines.",
+      "heroTitle": "Automation (n8n/AI)",
+      "heroSubtitle": "Eliminate repetitive work and unlock AI-driven efficiency across your operations.",
+      "outcomes": [
+        "Automate your sales, support, or ops workflows",
+        "Connect your tools with no-code AI pipelines",
+        "Save 10+ hours per week with smart automation"
+      ],
+      "options": [
+        { "title": "Starter Automation", "desc": "1-3 automated workflows with n8n." },
+        { "title": "AI Pipeline", "desc": "LLM-powered pipeline for data or content." },
+        { "title": "Full Ops Automation", "desc": "End-to-end automation for your business." }
+      ],
+      "pricing": "Custom quotes based on scope. Private pricing available — use your code at checkout."
+    },
+    "bots": {
+      "name": "Bots & AI Agents",
+      "description": "Custom chatbots and autonomous AI agents for your business.",
+      "heroTitle": "Bots & AI Agents",
+      "heroSubtitle": "Deploy intelligent agents that work 24/7 to serve your customers and automate decisions.",
+      "outcomes": [
+        "Launch a branded AI chatbot on your site or app",
+        "Build a custom AI agent for lead gen or support",
+        "Integrate with WhatsApp, Telegram, or Slack"
+      ],
+      "options": [
+        { "title": "Support Bot", "desc": "FAQ and customer support chatbot." },
+        { "title": "Lead Gen Agent", "desc": "AI agent that qualifies and captures leads." },
+        { "title": "Custom AI Agent", "desc": "Fully tailored agent with custom logic." }
+      ],
+      "pricing": "Custom quotes based on scope. Private pricing available — use your code at checkout."
+    },
+    "lowVoltage": {
+      "name": "Low Voltage Systems",
+      "description": "Smart home, security, and low voltage infrastructure solutions.",
+      "heroTitle": "Low Voltage Systems",
+      "heroSubtitle": "Professional design and installation of smart, secure, and connected environments.",
+      "outcomes": [
+        "Get a fully wired smart home or office",
+        "Install professional-grade security systems",
+        "Centralize control with modern AV and networking"
+      ],
+      "options": [
+        { "title": "Security System", "desc": "Cameras, alarms, and access control." },
+        { "title": "Smart Home", "desc": "Full home automation and networking." },
+        { "title": "AV & Network", "desc": "Audio-visual and structured cabling." }
+      ],
+      "pricing": "Custom quotes based on scope. Private pricing available — use your code at checkout."
+    },
+    "realEstate": {
+      "name": "Real Estate Solutions",
+      "description": "Tech-powered tools and marketing for real estate professionals.",
+      "heroTitle": "Real Estate Solutions",
+      "heroSubtitle": "Elevate your real estate brand with custom websites, CRM automation, and AI-driven lead generation.",
+      "outcomes": [
+        "Launch a property listing site with IDX/MLS",
+        "Automate lead follow-up and CRM workflows",
+        "Generate more qualified buyer and seller leads"
+      ],
+      "options": [
+        { "title": "Agent Website", "desc": "Custom real estate site with listings." },
+        { "title": "Lead Gen System", "desc": "AI-powered lead capture and nurture." },
+        { "title": "Full RE Tech Stack", "desc": "CRM, site, automation bundled." }
+      ],
+      "pricing": "Custom quotes based on scope. Private pricing available — use your code at checkout."
+    },
+    "youtube": {
+      "name": "YouTube/FocusModeLab",
+      "description": "Content strategy, channel growth, and FocusModeLab resources.",
+      "heroTitle": "YouTube / FocusModeLab",
+      "heroSubtitle": "Grow your YouTube channel with expert strategy, production support, and the FocusModeLab community.",
+      "outcomes": [
+        "Get a proven YouTube content and growth strategy",
+        "Access FocusModeLab courses and community",
+        "Monetize your channel faster with expert guidance"
+      ],
+      "options": [
+        { "title": "Channel Audit", "desc": "Full review with actionable improvements." },
+        { "title": "Content Strategy", "desc": "90-day plan tailored to your niche." },
+        { "title": "FocusModeLab Access", "desc": "Full community and course access." }
+      ],
+      "pricing": "Custom quotes based on scope. Private pricing available — use your code at checkout."
+    }
+  },
+  "cta": {
+    "startProject": "Start Project",
+    "learnMore": "Learn More"
+  }
+}
