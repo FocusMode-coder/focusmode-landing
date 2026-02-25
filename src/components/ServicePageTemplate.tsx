@@ -6,179 +6,79 @@ type Option = {
 };
 
 type Props = {
-  title: string;
-  subtitle: string;
+  heroTitle: string;
+  heroSubtitle: string;
   outcomes: string[];
   options: Option[];
   pricing: string;
-
-  primaryCtaLabel: string;
-  primaryCtaHref: string;
-
-  secondaryCtaLabel: string;
-  secondaryCtaHref: string;
-
-  contactEmail: string;
-  contactWhatsapp: string;
+  ctaLabel: string;
+  ctaHref: string;
 };
 
 export default function ServicePageTemplate({
-  title,
-  subtitle,
+  heroTitle,
+  heroSubtitle,
   outcomes,
   options,
   pricing,
-  primaryCtaLabel,
-  primaryCtaHref,
-  secondaryCtaLabel,
-  secondaryCtaHref,
-  contactEmail,
-  contactWhatsapp,
+  ctaLabel,
+  ctaHref,
 }: Props) {
   return (
-    <div className="min-h-screen bg-[#05060a] text-white">
-      {/* Background glow */}
-      <div className="pointer-events-none fixed inset-0 overflow-hidden">
-        <div className="absolute -top-40 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-indigo-600/20 blur-[120px]" />
-        <div className="absolute top-40 left-[-120px] h-[420px] w-[420px] rounded-full bg-fuchsia-500/10 blur-[120px]" />
-        <div className="absolute bottom-[-180px] right-[-140px] h-[520px] w-[520px] rounded-full bg-cyan-500/10 blur-[140px]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(255,255,255,0.06),_transparent_55%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,_rgba(0,0,0,0),_rgba(0,0,0,0.55))]" />
-      </div>
+    <div className="flex flex-col">
+      {/* Hero */}
+      <section className="relative px-6 py-28 text-center bg-gradient-to-br from-gray-950 via-gray-900 to-indigo-950">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-900/20 via-transparent to-transparent pointer-events-none" />
+        <h1 className="relative text-4xl md:text-5xl font-bold text-white mb-4">{heroTitle}</h1>
+        <p className="relative text-lg text-gray-300 max-w-2xl mx-auto">{heroSubtitle}</p>
+      </section>
 
-      <div className="relative px-6 py-16">
-        <div className="mx-auto max-w-6xl">
-          {/* Header card */}
-          <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_0_0_1px_rgba(255,255,255,0.04)]">
-            <div className="p-8 md:p-10">
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-gray-200">
-                <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_18px_rgba(52,211,153,0.75)]" />
-                FocusMode • Service
-              </div>
+      {/* 3 Key Outcomes */}
+      <section className="px-6 py-16 max-w-4xl mx-auto w-full">
+        <h2 className="text-2xl font-bold text-white mb-8 text-center">3 Key Outcomes</h2>
+        <ul className="flex flex-col gap-4">
+          {outcomes.map((outcome, i) => (
+            <li key={i} className="flex items-start gap-4 bg-gray-900 border border-gray-800 rounded-xl p-5">
+              <span className="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-sm">
+                {i + 1}
+              </span>
+              <p className="text-gray-200 leading-relaxed">{outcome}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
 
-              <h1 className="mt-5 text-4xl md:text-5xl font-bold tracking-tight">
-                {title}
-              </h1>
-              <p className="mt-4 max-w-3xl text-base md:text-lg text-gray-300">
-                {subtitle}
-              </p>
-
-              {/* CTAs */}
-              <div className="mt-8 flex flex-col sm:flex-row gap-3">
-                <a
-                  href={primaryCtaHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center rounded-2xl bg-indigo-600 px-6 py-3 font-semibold shadow-[0_12px_40px_rgba(79,70,229,0.35)] transition hover:bg-indigo-500"
-                >
-                  <span className="mr-2">{primaryCtaLabel}</span>
-                  <span className="transition-transform group-hover:translate-x-0.5">↗</span>
-                </a>
-
-                <a
-                  href={secondaryCtaHref}
-                  target={secondaryCtaHref === '#contact' ? undefined : '_blank'}
-                  rel={secondaryCtaHref === '#contact' ? undefined : 'noopener noreferrer'}
-                  className="group inline-flex items-center justify-center rounded-2xl border border-white/12 bg-white/6 px-6 py-3 font-semibold text-gray-100 backdrop-blur-xl transition hover:bg-white/10"
-                >
-                  <span className="mr-2">{secondaryCtaLabel}</span>
-                  <span className="transition-transform group-hover:translate-x-0.5">→</span>
-                </a>
-              </div>
-
-              <div className="mt-6 text-sm text-gray-400">
-                No raw URLs shown • Opens in a new tab where applicable
-              </div>
-            </div>
-          </div>
-
-          {/* Content grid */}
-          <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Outcomes */}
-            <div className="lg:col-span-2 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-7 md:p-8">
-              <h2 className="text-xl font-bold">Outcomes</h2>
-              <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
-                {outcomes.map((o) => (
-                  <div
-                    key={o}
-                    className="rounded-2xl border border-white/10 bg-black/20 p-4"
-                  >
-                    <div className="flex gap-3">
-                      <div className="mt-1 h-2.5 w-2.5 rounded-full bg-indigo-400 shadow-[0_0_18px_rgba(99,102,241,0.75)]" />
-                      <p className="text-gray-200">{o}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Options */}
-              <h2 className="mt-10 text-xl font-bold">Options</h2>
-              <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-                {options.map((o) => (
-                  <div
-                    key={o.title}
-                    className="rounded-3xl border border-white/10 bg-black/20 p-6 transition hover:bg-black/25"
-                  >
-                    <h3 className="text-lg font-semibold">{o.title}</h3>
-                    <p className="mt-2 text-gray-300">{o.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Pricing */}
-            <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-7 md:p-8">
-              <h2 className="text-xl font-bold">Pricing</h2>
-              <p className="mt-4 text-gray-300">{pricing}</p>
-
-              <div className="mt-8 rounded-2xl border border-white/10 bg-black/20 p-5">
-                <div className="text-sm text-gray-300">Primary CTA</div>
-                <div className="mt-1 font-semibold">{primaryCtaLabel}</div>
-                <div className="mt-4 text-sm text-gray-300">Secondary CTA</div>
-                <div className="mt-1 font-semibold">{secondaryCtaLabel}</div>
-              </div>
-
-              <div className="mt-6 text-xs text-gray-400">
-                Tip: if you want “Buy / Visit Site / Contact” localized later, we hook them to i18n keys.
-              </div>
-            </div>
-          </div>
-
-          {/* Contact */}
-          <div
-            id="contact"
-            className="mt-10 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-7 md:p-8"
-          >
-            <h2 className="text-xl font-bold">Contact</h2>
-            <p className="mt-2 text-gray-300">
-              Prefer a quick message? Email or WhatsApp — fast response.
-            </p>
-
-            <div className="mt-6 flex flex-col sm:flex-row gap-3">
-              <a
-                href={`mailto:${contactEmail}`}
-                className="inline-flex items-center justify-center rounded-2xl border border-white/12 bg-white/6 px-6 py-3 font-semibold hover:bg-white/10 transition"
+      {/* Options */}
+      <section className="px-6 py-16 bg-gray-900/40">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">Options</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {options.map((option, i) => (
+              <div
+                key={i}
+                className="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-indigo-500 transition-colors"
               >
-                Email
-              </a>
-
-              <a
-                href={contactWhatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-2xl border border-white/12 bg-white/6 px-6 py-3 font-semibold hover:bg-white/10 transition"
-              >
-                WhatsApp
-              </a>
-            </div>
-          </div>
-
-          {/* Footer micro */}
-          <div className="mt-10 pb-10 text-center text-xs text-gray-500">
-            © {new Date().getFullYear()} FocusMode
+                <h3 className="text-lg font-semibold text-indigo-300 mb-2">{option.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{option.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Pricing */}
+      <section className="px-6 py-16 max-w-3xl mx-auto w-full text-center">
+        <h2 className="text-2xl font-bold text-white mb-4">Pricing</h2>
+        <p className="text-gray-400 mb-8 leading-relaxed">{pricing}</p>
+        <Link
+          href={ctaHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-10 py-4 rounded-full transition-colors duration-200 text-lg"
+        >
+          {ctaLabel}
+        </Link>
+      </section>
     </div>
   );
 }
