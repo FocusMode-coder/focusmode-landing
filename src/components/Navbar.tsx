@@ -1,21 +1,16 @@
 'use client';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import type { Locale } from '@/lib/i18n';
 
 interface NavbarProps {
   locale: Locale;
-  messages: {
-    nav: {
-      home: string;
-      services: string;
-      contact: string;
-    };
-  };
 }
 
-export default function Navbar({ locale, messages }: NavbarProps) {
+export default function Navbar({ locale }: NavbarProps) {
+  const t = useTranslations('nav');
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
 
@@ -47,19 +42,19 @@ export default function Navbar({ locale, messages }: NavbarProps) {
               href={`/${locale}`}
               className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
             >
-              {messages.nav.home}
+              {t('home')}
             </Link>
             <Link
               href={`/${locale}#services`}
               className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
             >
-              {messages.nav.services}
+              {t('services')}
             </Link>
             <Link
               href={`/${locale}#contact`}
               className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
             >
-              {messages.nav.contact}
+              {t('contact')}
             </Link>
 
             {/* Language Switcher */}
@@ -115,13 +110,13 @@ export default function Navbar({ locale, messages }: NavbarProps) {
         {mobileOpen && (
           <div className="md:hidden border-t border-slate-200 dark:border-slate-700 py-4 space-y-2">
             <Link href={`/${locale}`} className="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 font-medium" onClick={() => setMobileOpen(false)}>
-              {messages.nav.home}
+              {t('home')}
             </Link>
             <Link href={`/${locale}#services`} className="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 font-medium" onClick={() => setMobileOpen(false)}>
-              {messages.nav.services}
+              {t('services')}
             </Link>
             <Link href={`/${locale}#contact`} className="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 font-medium" onClick={() => setMobileOpen(false)}>
-              {messages.nav.contact}
+              {t('contact')}
             </Link>
             <div className="px-4 pt-2 flex gap-2">
               {languages.map((lang) => (

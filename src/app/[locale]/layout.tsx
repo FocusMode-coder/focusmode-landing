@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
+import type { AbstractIntlMessages } from 'next-intl';
 import { getMessages, isValidLocale } from '@/lib/i18n';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { notFound } from 'next/navigation';
+import { NextIntlClientProvider } from 'next-intl';
 
 export async function generateMetadata({
   params,
@@ -13,11 +15,11 @@ export async function generateMetadata({
   if (!isValidLocale(locale)) return {};
   const messages = getMessages(locale);
   return {
-    title: `LucianoAI Systems - ${messages.home.hero_subtitle}`,
-    description: messages.home.hero_description,
+    title: `LucianoAI Systems - ${messages.home.heroSubtitle}`,
+    description: messages.home.heroSubtitle,
     openGraph: {
       title: 'LucianoAI Systems',
-      description: messages.home.hero_description,
+      description: messages.home.heroSubtitle,
       siteName: 'LucianoAI Systems',
     },
   };
@@ -42,9 +44,11 @@ export default function LocaleLayout({
 
   return (
     <div className="min-h-screen flex flex-col bg-white dark:bg-slate-950">
-      <Navbar locale={locale} messages={messages} />
-      <main className="flex-1">{children}</main>
-      <Footer locale={locale} messages={messages} />
+      <NextIntlClientProvider messages={messages as unknown as AbstractIntlMessages}>
+        <Navbar locale={locale} />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </NextIntlClientProvider>
     </div>
   );
 }

@@ -1,18 +1,13 @@
+'use client';
+
 import Link from 'next/link';
-import type { Locale } from '@/lib/i18n';
+import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
 
-interface FooterProps {
-  locale: Locale;
-  messages: {
-    footer: {
-      tagline: string;
-      rights: string;
-      privacy: string;
-    };
-  };
-}
-
-export default function Footer({ locale, messages }: FooterProps) {
+export default function Footer() {
+  const t = useTranslations('footer');
+  const params = useParams();
+  const locale = (params?.locale as string) || 'en';
   const currentYear = new Date().getFullYear();
 
   const serviceLinks = [
@@ -34,8 +29,8 @@ export default function Footer({ locale, messages }: FooterProps) {
               <span className="text-blue-400">⬡</span>
               <span>LucianoAI Systems</span>
             </div>
-            <p className="text-slate-400 text-sm">{messages.footer.tagline}</p>
-            <p className="text-slate-500 text-xs mt-3">{messages.footer.privacy}</p>
+            <p className="text-slate-400 text-sm">{t('tagline')}</p>
+            <p className="text-slate-500 text-xs mt-3">{t('privacy')}</p>
           </div>
 
           {/* Services */}
@@ -80,7 +75,7 @@ export default function Footer({ locale, messages }: FooterProps) {
         </div>
 
         <div className="border-t border-slate-800 pt-6 text-center text-slate-500 text-sm">
-          © {currentYear} LucianoAI Systems. {messages.footer.rights}
+          © {currentYear} LucianoAI Systems. {t('rights')}
         </div>
       </div>
     </footer>
