@@ -1,5 +1,2 @@
-# Updated .gitignore
-# Ignore node modules
-node_modules/
-# Ignore build output
-/dist
+.gitignore content with updated NEXT_PUBLIC environment variables
+# Ignoring files and folders...
