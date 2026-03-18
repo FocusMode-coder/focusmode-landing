@@ -13,10 +13,14 @@
     "validate:i18n": "node scripts/validate-messages.mjs"
   },
   "dependencies": {
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "@types/three": "^0.183.1",
     "next": "14.2.29",
     "next-intl": "^3.26.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "three": "^0.183.2"
   },
   "devDependencies": {
     "@types/node": "^20",
