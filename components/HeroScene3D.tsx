@@ -22,10 +22,11 @@ function FloatingShape({
   floatSpeed: number;
   shape: 'torus' | 'octahedron' | 'sphere';
 }) {
-  const ref = useRef<THREE.Mesh>(null!);
+  const ref = useRef<THREE.Mesh>(null);
   const initialY = position[1];
 
   useFrame(({ clock }) => {
+    if (!ref.current) return;
     const t = clock.getElapsedTime();
     ref.current.rotation.x += rotAxis[0] * speed;
     ref.current.rotation.y += rotAxis[1] * speed;
@@ -67,9 +68,10 @@ function FloatingShape({
 }
 
 function NetworkSphere() {
-  const ref = useRef<THREE.Mesh>(null!);
+  const ref = useRef<THREE.Mesh>(null);
 
   useFrame(({ clock }) => {
+    if (!ref.current) return;
     ref.current.rotation.y = clock.getElapsedTime() * 0.08;
     ref.current.rotation.x = clock.getElapsedTime() * 0.04;
   });
@@ -99,8 +101,9 @@ function ParticleField() {
     return arr;
   }, []);
 
-  const ref = useRef<THREE.Points>(null!);
+  const ref = useRef<THREE.Points>(null);
   useFrame(({ clock }) => {
+    if (!ref.current) return;
     ref.current.rotation.y = clock.getElapsedTime() * 0.02;
   });
 

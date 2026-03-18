@@ -156,6 +156,7 @@ export default async function HomePage({
             >
               📧 Email Us
             </a>
+            {/* TODO: Replace with actual business WhatsApp number */}
             <a
               href="https://wa.me/1234567890"
               target="_blank"
