@@ -12,6 +12,7 @@ const serviceLinks = [
   { key: 'lowVoltage', slug: 'low-voltage' },
   { key: 'realEstate', slug: 'real-estate' },
   { key: 'youtube', slug: 'youtube-focusmode' },
+  { key: 'nexa', slug: 'nexa-systems' },
 ];
 
 export default function Navbar({ locale }: { locale: string }) {
@@ -27,16 +28,17 @@ export default function Navbar({ locale }: { locale: string }) {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-gray-950/90 backdrop-blur border-b border-gray-800">
+    <nav className="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-gray-800/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href={`/${locale}`} className="text-xl font-bold text-white tracking-tight">
-          LucianoAI <span className="text-indigo-400">Systems</span>
+        <Link href={`/${locale}`} className="flex items-center gap-2 text-xl font-extrabold text-white tracking-tight hover:opacity-80 transition-opacity">
+          <span className="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center text-xs font-black">F</span>
+          <span>Luciano<span className="text-indigo-400">AI</span></span>
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-6">
-          <Link href={`/${locale}`} className="text-gray-300 hover:text-white transition-colors text-sm">
+        <div className="hidden md:flex items-center gap-8">
+          <Link href={`/${locale}`} className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
             {t('home')}
           </Link>
 
@@ -44,22 +46,24 @@ export default function Navbar({ locale }: { locale: string }) {
           <div className="relative">
             <button
               onClick={() => setServicesOpen(!servicesOpen)}
-              className="text-gray-300 hover:text-white transition-colors text-sm flex items-center gap-1"
+              onBlur={() => setTimeout(() => setServicesOpen(false), 150)}
+              className="text-gray-300 hover:text-white transition-colors text-sm font-medium flex items-center gap-1.5"
             >
               {t('services')}
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <svg className={`w-3.5 h-3.5 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
               </svg>
             </button>
             {servicesOpen && (
-              <div className="absolute top-full left-0 mt-2 w-52 bg-gray-900 border border-gray-700 rounded-lg shadow-xl py-2 z-50">
+              <div className="absolute top-full left-0 mt-2 w-56 bg-gray-900 border border-gray-700 rounded-xl shadow-2xl shadow-black/40 py-1.5 z-50">
                 {serviceLinks.map(({ key, slug }) => (
                   <Link
                     key={key}
                     href={`/${locale}/services/${slug}`}
-                    className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-gray-800 transition-colors"
+                    className="flex items-center gap-2 px-4 py-2.5 text-sm text-gray-300 hover:text-white hover:bg-indigo-600/20 transition-colors"
                     onClick={() => setServicesOpen(false)}
                   >
+                    <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0" />
                     {t(key as any)}
                   </Link>
                 ))}
@@ -68,13 +72,15 @@ export default function Navbar({ locale }: { locale: string }) {
           </div>
 
           {/* Language Switcher */}
-          <div className="flex items-center gap-2 text-sm border border-gray-700 rounded-full px-3 py-1">
+          <div className="flex items-center gap-1 bg-gray-800/60 rounded-full px-1 py-1 border border-gray-700/50">
             {['en', 'es', 'pt'].map((lang) => (
               <Link
                 key={lang}
                 href={switchLocale(lang)}
-                className={`uppercase font-medium transition-colors ${
-                  locale === lang ? 'text-indigo-400' : 'text-gray-400 hover:text-white'
+                className={`uppercase text-xs font-bold px-2.5 py-1 rounded-full transition-all duration-150 ${
+                  locale === lang
+                    ? 'bg-indigo-600 text-white'
+                    : 'text-gray-400 hover:text-white'
                 }`}
               >
                 {lang}
@@ -85,7 +91,7 @@ export default function Navbar({ locale }: { locale: string }) {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-gray-300 hover:text-white"
+          className="md:hidden text-gray-300 hover:text-white p-1 rounded-lg hover:bg-gray-800 transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -101,28 +107,32 @@ export default function Navbar({ locale }: { locale: string }) {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-gray-900 border-t border-gray-800 px-4 py-4 flex flex-col gap-3">
-          <Link href={`/${locale}`} className="text-gray-300 hover:text-white text-sm" onClick={() => setMenuOpen(false)}>
+        <div className="md:hidden bg-gray-900/95 backdrop-blur-md border-t border-gray-800 px-4 py-5 flex flex-col gap-2">
+          <Link href={`/${locale}`} className="text-gray-300 hover:text-white text-sm font-medium py-2 px-3 rounded-lg hover:bg-gray-800 transition-colors" onClick={() => setMenuOpen(false)}>
             {t('home')}
           </Link>
-          <p className="text-xs text-gray-500 uppercase tracking-wider mt-2">{t('services')}</p>
+          <p className="text-xs text-gray-600 uppercase tracking-widest mt-3 mb-1 px-3">{t('services')}</p>
           {serviceLinks.map(({ key, slug }) => (
             <Link
               key={key}
               href={`/${locale}/services/${slug}`}
-              className="text-gray-300 hover:text-white text-sm pl-2"
+              className="text-gray-300 hover:text-white text-sm py-2 px-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center gap-2"
               onClick={() => setMenuOpen(false)}
             >
+              <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0" />
               {t(key as any)}
             </Link>
           ))}
-          <div className="flex items-center gap-3 mt-3 pt-3 border-t border-gray-800">
+          <div className="flex items-center gap-2 mt-4 pt-4 border-t border-gray-800">
+            <span className="text-xs text-gray-500 mr-1">Lang:</span>
             {['en', 'es', 'pt'].map((lang) => (
               <Link
                 key={lang}
                 href={switchLocale(lang)}
-                className={`uppercase text-sm font-medium ${
-                  locale === lang ? 'text-indigo-400' : 'text-gray-400 hover:text-white'
+                className={`uppercase text-xs font-bold px-3 py-1.5 rounded-full transition-all ${
+                  locale === lang
+                    ? 'bg-indigo-600 text-white'
+                    : 'text-gray-400 border border-gray-700 hover:border-indigo-500 hover:text-white'
                 }`}
                 onClick={() => setMenuOpen(false)}
               >
