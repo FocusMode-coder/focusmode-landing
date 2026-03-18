@@ -17,6 +17,7 @@ export default function Footer() {
     { slug: 'low-voltage', label: 'Low Voltage' },
     { slug: 'real-estate', label: 'Real Estate' },
     { slug: 'youtube-focusmode', label: 'YouTube' },
+    { slug: 'nexa-systems', label: 'NEXA Systems' },
   ];
 
   return (
@@ -40,7 +41,7 @@ export default function Footer() {
               {serviceLinks.map((link) => (
                 <li key={link.slug}>
                   <Link
-                    href={`/${locale}/service/${link.slug}`}
+                    href={`/${locale}/services/${link.slug}`}
                     className="text-slate-400 hover:text-blue-400 text-sm transition-colors"
                   >
                     {link.label}
