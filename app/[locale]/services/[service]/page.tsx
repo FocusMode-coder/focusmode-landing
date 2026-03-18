@@ -10,6 +10,7 @@ const serviceSlugToKey: Record<string, string> = {
   'low-voltage': 'lowVoltage',
   'real-estate': 'realEstate',
   'youtube-focusmode': 'youtube',
+  'nexa-systems': 'nexa',
 };
 
 const serviceStripeEnvVar: Record<string, string> = {
@@ -19,6 +20,7 @@ const serviceStripeEnvVar: Record<string, string> = {
   'low-voltage': process.env.NEXT_PUBLIC_STRIPE_LOWVOLTAGE || '#',
   'real-estate': process.env.NEXT_PUBLIC_STRIPE_REALESTATE || '#',
   'youtube-focusmode': process.env.NEXT_PUBLIC_STRIPE_YOUTUBE || '#',
+  'nexa-systems': process.env.NEXT_PUBLIC_STRIPE_NEXA || '#',
 };
 
 export async function generateStaticParams() {

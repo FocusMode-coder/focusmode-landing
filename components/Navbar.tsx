@@ -12,6 +12,7 @@ const serviceLinks = [
   { key: 'lowVoltage', slug: 'low-voltage' },
   { key: 'realEstate', slug: 'real-estate' },
   { key: 'youtube', slug: 'youtube-focusmode' },
+  { key: 'nexa', slug: 'nexa-systems' },
 ];
 
 export default function Navbar({ locale }: { locale: string }) {
